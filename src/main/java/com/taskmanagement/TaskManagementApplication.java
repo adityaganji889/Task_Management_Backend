@@ -34,5 +34,5 @@ public class TaskManagementApplication implements CommandLineRunner {
 			userRepository.save(user);
 		}
 	}
-
+    
 }

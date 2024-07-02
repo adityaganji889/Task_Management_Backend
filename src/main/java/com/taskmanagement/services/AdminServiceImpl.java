@@ -9,12 +9,15 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.taskmanagement.dto.CommentPostRequestDTO;
 import com.taskmanagement.dto.TaskEditRequestDTO;
 import com.taskmanagement.dto.TaskPostRequestDTO;
+import com.taskmanagement.entities.Comment;
 import com.taskmanagement.entities.Task;
 import com.taskmanagement.entities.User;
 import com.taskmanagement.enums.TaskStatus;
 import com.taskmanagement.enums.UserRole;
+import com.taskmanagement.repositories.CommentRepository;
 import com.taskmanagement.repositories.TaskRepository;
 import com.taskmanagement.repositories.UserRepository;
 
@@ -132,5 +135,6 @@ public class AdminServiceImpl implements AdminService {
 		   return tasks.get();
 		}
 	}
-
+	
+	
 }

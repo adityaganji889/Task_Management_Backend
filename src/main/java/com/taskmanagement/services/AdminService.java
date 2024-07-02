@@ -5,8 +5,10 @@ import java.util.Optional;
 
 import com.taskmanagement.entities.User;
 import com.taskmanagement.enums.TaskStatus;
+import com.taskmanagement.dto.CommentPostRequestDTO;
 import com.taskmanagement.dto.TaskEditRequestDTO;
 import com.taskmanagement.dto.TaskPostRequestDTO;
+import com.taskmanagement.entities.Comment;
 import com.taskmanagement.entities.Task;
 
 public interface AdminService {
@@ -26,4 +28,5 @@ public interface AdminService {
 	TaskStatus mapStringToTaskStatus(String status);
 	
 	List<Task> searchTaskByTitle(String title);
+	
 }
